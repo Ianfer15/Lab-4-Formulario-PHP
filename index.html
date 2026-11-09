@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+</head>
+<body>
+
+<form action="generales.php" method="post">
+    <fieldset>
+        <legend>Datos Personales</legend>
+
+        <label for="fnombre">Nombre: </label>
+        <input type="text" id="fnombre" name="nombre" placeholder="Entre nombre">
+        <br>
+
+        <label for="fapellido">Apellido: </label>
+        <input type="text" id="fapellido" name="apellido" placeholder="Entre apellido">
+        <br>
+
+        <label for="fcontrasena">Contraseña: </label>
+        <input type="password" id="fcontrasena" name="contrasena">
+        <br>
+
+        <label for="fyear">Año de Nacimiento: </label>
+        <input type="number" name="yearNac" id="fyear" placeholder="Entre año de nacimiento">
+        <br><br>
+
+        <fieldset>
+            <legend>Genero</legend>
+            <input type="radio" name="genero" value="fem"> Femenino
+            <input type="radio" name="genero" value="masc"> Masculino
+        </fieldset>
+        <br><br>
+
+        <fieldset>
+            <legend>Sus frutas favoritas</legend>
+            <input type="checkbox" name="frutas[]" value="Guineo"> Guineo
+            <input type="checkbox" name="frutas[]" value="Manzana"> Manzana
+            <input type="checkbox" name="frutas[]" value="Mango"> Mango
+        </fieldset>
+        <br><br>
+
+        <fieldset>
+            <legend>
+                <label for="civil">Estado civil:</label>
+            </legend>
+
+            <select id="civil" name="civil" size="3">
+                <option value="casado">Casado</option>
+                <option value="soltero">Soltero</option>
+                <option value="unido">Unido</option>
+                <option value="divorciado">Divorciado</option>
+                <option value="viudo">Viudo</option>
+            </select>
+        </fieldset>
+    </fieldset>
+
+    <br><br>
+
+    <input type="submit" name="submit" value="Enviar">
+</form>
+
+</body>
+</html>
